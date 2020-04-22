@@ -117,8 +117,8 @@ class SaveOutputDevice(OutputDevice):
             message.show()
             save_file = open(file_name, "w")
             if image:
-                save_file.write(utils.add_screenshot(image, 50, 50, ";simage:"))
-                save_file.write(utils.add_screenshot(image, 200, 200, ";;gimage:"))
+                save_file.write(utils.add_screenshot(image, 95, 95, ";simage:"))
+                save_file.write(utils.add_screenshot(image, 95, 95, ";;gimage:"))
                 save_file.write("\r")
             for line in _gcode:
                 save_file.write(line)
